@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "transaction_unit"
+version = "0.1.0"
+description = "send and recieve transaction"
+authors = ["Ohaggard <marlausor@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aio_pika = "^9.4.1"
+russian-names = "^0.1.2"
+pydantic = "^2.7.4"
+rabbitmq-testclient = {version = ">=0.1.0", source = "testpypi"}
+pandas = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://testpypi.python.org/pypi"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
